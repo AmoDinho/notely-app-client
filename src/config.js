@@ -1,11 +1,12 @@
 export default{
+    MAX_ATTACHMENT_SIZE:5000000,
     s3: {
        REGION:"us-east-1",
        BUCKET:"notely-app-uploads"
     },
     apiGateway:{
         REGION:"us-east-1",
-        URL:" https://qtlkkm6dpf.execute-api.us-east-1.amazonaws.com/prod/"
+        URL: "https://qtlkkm6dpf.execute-api.us-east-1.amazonaws.com/prod"
     },
     cognito:{
         REGION:"us-east-1",
