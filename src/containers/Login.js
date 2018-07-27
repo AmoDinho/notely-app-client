@@ -15,12 +15,12 @@ export default class Login extends Component{
         };
     }
 
-
     validateForm(){
         return this.state.email.length > 0 && this.state.password.length >0;
     }
 
     handleChange = event =>{
+        
         this.setState({
             [event.target.id]: event.target.value
         });
@@ -34,7 +34,7 @@ export default class Login extends Component{
         try{
            await Auth.signIn(this.state.email, this.state.password);
            this.props.userHasAuthenticated(true);
-           this.props.history.push("/");
+           
         } catch(e){
             alert(e.message);
             this.setState({isLoading:false});
