@@ -16,7 +16,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "aws-amplify": "^1.0.2",
+    "aws-amplify": "^1.1.28",
     "react-bootstrap": "^0.32.1"
   }
 }
